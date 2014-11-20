@@ -1,0 +1,192 @@
+<!doctype html>
+<html lang="en">
+
+	<head>
+		<meta charset="utf-8">
+
+		<title>The RITMARE StarterKit</title>
+
+		<meta name="description" content="A framework for easily creating beautiful presentations using HTML">
+		<meta name="author" content="Hakim El Hattab">
+
+		<meta name="apple-mobile-web-app-capable" content="yes" />
+		<meta name="apple-mobile-web-app-status-bar-style" content="black-translucent" />
+
+		<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no, minimal-ui">
+
+		<link rel="stylesheet" href="css/reveal.css">
+		<link rel="stylesheet" href="css/theme/default.css" id="theme">
+
+		<!-- For syntax highlighting -->
+		<link rel="stylesheet" href="lib/css/zenburn.css">
+
+		<!-- Include the appropriate print stylesheet -->
+		<script>
+			var link = document.createElement( 'link' );
+			link.rel = 'stylesheet';
+			link.type = 'text/css';
+			link.href = window.location.search.match( /print-pdf/gi ) ? 'css/print/pdf.css' : 'css/print/paper.css';
+			document.getElementsByTagName( 'head' )[0].appendChild( link );
+		</script>
+
+		<!--[if lt IE 9]>
+		<script src="lib/js/html5shiv.js"></script>
+		<![endif]-->
+	</head>
+
+	<body>
+
+		<div class="reveal">
+
+			<!-- Any section element inside of this container is displayed as a slide -->
+			<div class="slides">
+			  <section style="top: 0px; display: block;">
+			    <h3></h3>
+			    <ul>
+			      <li> Objectives</li>
+			      <li> Architecture</li>
+			      <li> Software, License & Deployment</li>
+			      <li> Live Demo </li>
+			    </ul>
+			  </section>
+			  
+			  <section>
+			    <h3>The RITMARE Suite Software: Objectives</h3>
+			    <p><strong>Bottom-up strategy: enable researchers to autonomously contribute to the infrastructure</strong></p>
+			    <ul>
+			      <li>enablement of independent nodes of geo-data provision (inside and outside RITMARE): 
+				<ul>
+				  <li> maps/layers </li>
+				  <li> observations </li>
+				</ul>
+			      </li>
+			    </ul>
+			    <ul>
+			      <li>semantics-enriched (and -assisted) MD creation: 
+				<ul>
+				  <li> fine-grained Metadata (data-sets, sensors) </li>
+				  <li> leveraging controlled vocabularies and RDF-based data structures (FOAF description of the project’s researcher, organisation, ). </li>
+				</ul>
+			      </li>
+			    </ul>
+			  </section>
+
+			  <section>
+			    <h3>Software Components</h3>
+			    <ul>
+			      <li>GeoNode 2.0</li>
+			      <ul>
+				<li>GeoServer 2.4</li>
+				<li>PyCSW</li>
+				<li>Django web framework</li>
+				<li>PostgreSQL/PostGIS</li>
+			      </ul>
+			      <li>SOS 52°North 4.0.0</li>
+			      <li>RITMARE Suite (formerly StarterKit)</li>
+			    </ul>
+			  </section>
+
+			  <section>			 
+			    <h3>Services</h3>
+			    <style>.services td {font-size: 50%}</style>
+			    <table class="services">
+			      <tr><th>SERVICE</th> <th>VERSION</th> <th>NOTES</th></tr>
+			      <tr><td>OGC Web Map Service</td> <td>1.1.1, 1.3.0</td></tr>
+			      <tr><td>OGC Web Feature Service</td> <td>1.0.0, 1.1.0, 2.0</td></tr>
+			      <tr><td>OGC Web Coverage Service</td> <td>1.0, 1.1</td></tr>
+			      <tr><td>OGC Styled Layer Descriptor</td> <td>1.0</td></tr>
+			      <tr><td>OSGeo WMS Tiling Clients Recommendation</td></tr>
+			      <tr><td>OGC Web Map Tiling Service</td></tr>
+			      <tr><td>OSGeo Tile Map Service</td></tr>
+			      <tr><td>OGC Catalogue Services for the Web</td> <td>2.0.2</td></tr>
+			      <tr><td>INSPIRE Discovery Services</td> <td>3.0</td> <td>from GeoNode (pycsw)</td></tr>
+			      <tr><td>Search/Retrieve via URL (SRU) search protocol</td></tr>
+			      <tr><td>OGC SOS</td> <td>2.0.0</td> <td>from 52°North SOS</td></tr>
+			      <tr><td>OGC Sensor Model Language (SensorML)</td> <td>1.0.1</td></tr>
+			      <tr><td>OGC Observation and Measurement (O&M)</td> <td>2.0.0</td></tr>
+			      <tr><td>OGC Geography Markup Language (GML)</td> <td>3.1.1</td></tr>
+			    </table>
+			  </section>
+
+			  <section>
+			    <h2>Software & License</h2>
+			    <a href="https://github.com/SP7-Ritmare/" target="_blank">
+			      <img height="350" data-src="img/sp7-github.png" alt="SP7 Github Home page">
+			    </a>
+			    <ul>
+			      <li> Public GitHub repository</li>
+			      <li> Code release under GPL 3</li>
+			    </ul>
+			  </section>
+
+			  <section>
+			    <h2>Deployment & Maintenance</h2>
+			    <ul>
+			      <li>Distributed as a ready-to-use virtual appliance</li>
+			      <li>Packaged in the Open Virtualization Format (OVF)</li>
+			      <li>New updates are released regularly on Python Package Index (PyPI)</li>
+			    </ul>
+			    <a href="https://pypi.python.org/pypi/starterkit/1.2.2" target="_blank">
+			      <img height="350" src="img/sk-pypi.png"></img>
+			    </a>			    
+                          </section>
+			  
+			  <section data-background-iframe="http://geosk.ve.ismar.cnr.it/" style="pointer-events: none;">
+                          </section>
+
+			  <section data-background-iframe="http://sp7.irea.cnr.it/wiki/index.php/Category:Learning" style="pointer-events: none;">
+                          </section>
+			  
+			  <section data-background-iframe="http://150.178.42.24/" style="pointer-events: none;">
+                          </section>
+			  
+			</div>
+
+		</div>
+
+		<script src="lib/js/head.min.js"></script>
+		<script src="js/reveal.js"></script>
+
+		<script>
+
+			// Full list of configuration options available here:
+			// https://github.com/hakimel/reveal.js#configuration
+			Reveal.initialize({
+				controls: true,
+				progress: true,
+				history: true,
+				center: true,
+
+			        theme: Reveal.getQueryHash().theme || 'beige', // available themes are in /css/theme
+   			        transition: Reveal.getQueryHash().transition || 'fade', // default/cube/page/concave/zoom/linear/fade/none
+
+				// Optional libraries used to extend on reveal.js
+				dependencies: [
+					{ src: 'lib/js/classList.js', condition: function() { return !document.body.classList; } },
+					{ src: 'plugin/markdown/marked.js', condition: function() { return !!document.querySelector( '[data-markdown]' ); } },
+					{ src: 'plugin/markdown/markdown.js', condition: function() { return !!document.querySelector( '[data-markdown]' ); } },
+					{ src: 'plugin/highlight/highlight.js', async: true, condition: function() { return !!document.querySelector( 'pre code' ); }, callback: function() { hljs.initHighlightingOnLoad(); } },
+					{ src: 'plugin/zoom-js/zoom.js', async: true },
+					{ src: 'plugin/notes/notes.js', async: true }
+				]
+			});
+			Reveal.addEventListener('slidechanged', function(event) {
+			    if(event.currentSlide.getAttribute( 'data-background-iframe')){
+				document.getElementsByClassName('backgrounds')[0].style.zIndex = 1;
+				document.getElementsByClassName('slides')[0].style.zIndex = 2;
+				document.getElementsByClassName('slides')[0].style.pointerEvents = 'none';
+				document.getElementsByClassName('present')[0].style.pointerEvents = 'none';
+			    } else {
+				document.getElementsByClassName('backgrounds')[0].style.zIndex = 0;
+				document.getElementsByClassName('slides')[0].style.zIndex = 1;
+				document.getElementsByClassName('slides')[0].style.pointerEvents = '';			        
+				document.getElementsByClassName('present')[0].style.pointerEvents = '';
+				document.getElementsByClassName('slides')[0].style.removeProperty('pointerEvents');			        
+				document.getElementsByClassName('present')[0].style.removeProperty('pointerEvents');			        
+			    }
+			});
+
+		</script>
+
+	</body>
+</html>
