@@ -40,16 +40,6 @@
 
 			<!-- Any section element inside of this container is displayed as a slide -->
 			<div class="slides">
-			  <section style="top: 0px; display: block;">
-			    <h3></h3>
-			    <ul>
-			      <li> Objectives</li>
-			      <li> Architecture</li>
-			      <li> Software, License & Deployment</li>
-			      <li> Live Demo </li>
-			    </ul>
-			  </section>
-			  
 			  <section>
 			    <h3>The RITMARE Suite Software: Objectives</h3>
 			    <p><strong>Bottom-up strategy: enable researchers to autonomously contribute to the infrastructure</strong></p>
@@ -72,7 +62,7 @@
 			  </section>
 
 			  <section>
-			    <h3>Software Components</h3>
+			    <h3>Software Components (FLOSS)</h3>
 			    <ul>
 			      <li>GeoNode 2.0</li>
 			      <ul>
@@ -82,7 +72,25 @@
 				<li>PostgreSQL/PostGIS</li>
 			      </ul>
 			      <li>SOS 52°North 4.0.0</li>
-			      <li>RITMARE Suite (formerly StarterKit)</li>
+			      <ul>
+				<li>Embedded EDI Metadata </li>
+			      </ul>
+			      <li>RITMARE Software Suite (formerly StarterKit)</li>
+			    </ul>
+			  </section>
+
+			  <section>
+			    <h3>RITMARE Software Suite: additional components</h3>
+			    <ul>
+			      <li><strong>SOS Manager</strong> Supports editing of SensorML for
+							      registering a new sensor and allows upload of observations
+							      as tabular data in a text file.
+							      
+			      <li><strong>SOS Client</strong> The interface allows to easily interact
+				with an SOS to retrieve, for each sensor,
+				position, parameter list, offerings, and values.
+			      <li><strong>EDI Client</strong> The client-side component of the customizable,
+				semantics-aware metadata editing service.
 			    </ul>
 			  </section>
 
@@ -125,19 +133,29 @@
 			      <li>Distributed as a ready-to-use virtual appliance</li>
 			      <li>Packaged in the Open Virtualization Format (OVF)</li>
 			      <li>New updates are released regularly on Python Package Index (PyPI)</li>
+			      <li>Help Desk</li>
+			      <li>Online documentation wiki</li>
 			    </ul>
 			    <a href="https://pypi.python.org/pypi/starterkit/1.2.2" target="_blank">
-			      <img height="350" src="img/sk-pypi.png"></img>
+			      <img height="300" src="img/wiki-documentation.png"></img>
 			    </a>			    
                           </section>
 			  
 			  <section data-background-iframe="http://geosk.ve.ismar.cnr.it/" style="pointer-events: none;">
                           </section>
 
-			  <section data-background-iframe="http://sp7.irea.cnr.it/wiki/index.php/Category:Learning" style="pointer-events: none;">
-                          </section>
-			  
 			  <section data-background-iframe="http://150.178.42.24/" style="pointer-events: none;">
+                          </section>
+
+			  <section>
+			    <h2>Links</h2>
+			    <ul>
+			      <li><a href="https://github.com/SP7-Ritmare">https://github.com/SP7-Ritmare</a> GitHub code sharing repository
+			      <li><a href="https://pypi.python.org/pypi/starterkit/1.2.2">https://pypi.python.org/pypi/starterkit/1.2.2</a> PyPI package page
+			      <li><a href="http://sp7.irea.cnr.it/wiki/index.php/Category:Learning">http://sp7.irea.cnr.it/wiki/index.php/Category:Learning</a> Online documentation wiki
+			      <li><a href="http://geosk.ve.ismar.cnr.it/">http://geosk.ve.ismar.cnr.it/</a> RITMARE Software Suite (Demo)
+			      <li><a href="http://150.178.42.24/">http://150.178.42.24/</a> RITMARE Data Portal (v. 0.1 - Prototype)
+			    </ul>
                           </section>
 			  
 			</div>
