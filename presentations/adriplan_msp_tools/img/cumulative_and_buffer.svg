@@ -1,0 +1,332 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!-- Created with Inkscape (http://www.inkscape.org/) -->
+
+<svg
+   xmlns:osb="http://www.openswatchbook.org/uri/2009/osb"
+   xmlns:dc="http://purl.org/dc/elements/1.1/"
+   xmlns:cc="http://creativecommons.org/ns#"
+   xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+   xmlns:svg="http://www.w3.org/2000/svg"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:xlink="http://www.w3.org/1999/xlink"
+   xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
+   xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
+   width="744.09448819"
+   height="1052.3622047"
+   id="svg2"
+   version="1.1"
+   inkscape:version="0.48.4 r9939"
+   sodipodi:docname="cumulative_and_buffer.svg">
+  <defs
+     id="defs4">
+    <marker
+       inkscape:stockid="Arrow1Lend"
+       orient="auto"
+       refY="0.0"
+       refX="0.0"
+       id="Arrow1Lend"
+       style="overflow:visible;">
+      <path
+         id="path5541"
+         d="M 0.0,0.0 L 5.0,-5.0 L -12.5,0.0 L 5.0,5.0 L 0.0,0.0 z "
+         style="fill-rule:evenodd;stroke:#000000;stroke-width:1.0pt;"
+         transform="scale(0.8) rotate(180) translate(12.5,0)" />
+    </marker>
+    <marker
+       inkscape:stockid="Arrow1Lstart"
+       orient="auto"
+       refY="0.0"
+       refX="0.0"
+       id="Arrow1Lstart"
+       style="overflow:visible">
+      <path
+         id="path5538"
+         d="M 0.0,0.0 L 5.0,-5.0 L -12.5,0.0 L 5.0,5.0 L 0.0,0.0 z "
+         style="fill-rule:evenodd;stroke:#000000;stroke-width:1.0pt"
+         transform="scale(0.8) translate(12.5,0)" />
+    </marker>
+    <linearGradient
+       id="linearGradient3771"
+       osb:paint="solid">
+      <stop
+         style="stop-color:#f30000;stop-opacity:1;"
+         offset="0"
+         id="stop3773" />
+    </linearGradient>
+    <linearGradient
+       inkscape:collect="always"
+       xlink:href="#linearGradient3771"
+       id="linearGradient3775"
+       x1="-104.35714"
+       y1="269.50504"
+       x2="711.5"
+       y2="269.50504"
+       gradientUnits="userSpaceOnUse"
+       gradientTransform="matrix(0.66587112,0,0,0.66587112,213.57653,207.36649)" />
+    <linearGradient
+       inkscape:collect="always"
+       xlink:href="#linearGradient3771-2"
+       id="linearGradient3775-2"
+       x1="-104.35714"
+       y1="269.50504"
+       x2="711.5"
+       y2="269.50504"
+       gradientUnits="userSpaceOnUse"
+       gradientTransform="translate(-38.571433,27.142857)" />
+    <linearGradient
+       id="linearGradient3771-2"
+       osb:paint="solid">
+      <stop
+         style="stop-color:#e40000;stop-opacity:1;"
+         offset="0"
+         id="stop3773-5" />
+    </linearGradient>
+  </defs>
+  <sodipodi:namedview
+     id="base"
+     pagecolor="#ffffff"
+     bordercolor="#666666"
+     borderopacity="1.0"
+     inkscape:pageopacity="0.0"
+     inkscape:pageshadow="2"
+     inkscape:zoom="0.7"
+     inkscape:cx="-7.6090596"
+     inkscape:cy="524.26618"
+     inkscape:document-units="px"
+     inkscape:current-layer="layer1"
+     showgrid="true"
+     inkscape:snap-grids="true"
+     inkscape:window-width="1301"
+     inkscape:window-height="744"
+     inkscape:window-x="65"
+     inkscape:window-y="24"
+     inkscape:window-maximized="1">
+    <inkscape:grid
+       type="xygrid"
+       id="grid5356" />
+  </sodipodi:namedview>
+  <metadata
+     id="metadata7">
+    <rdf:RDF>
+      <cc:Work
+         rdf:about="">
+        <dc:format>image/svg+xml</dc:format>
+        <dc:type
+           rdf:resource="http://purl.org/dc/dcmitype/StillImage" />
+        <dc:title></dc:title>
+      </cc:Work>
+    </rdf:RDF>
+  </metadata>
+  <g
+     inkscape:label="Layer 1"
+     inkscape:groupmode="layer"
+     id="layer1">
+    <path
+       style="opacity:0.53497943;fill:#8dad00;fill-opacity:1;stroke:#000000;stroke-width:0.66587114px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
+       d="m 444.34845,798.33048 c -7.60996,-1.9025 -80.85578,-39.00103 -83.70952,-42.80601 -2.85373,-3.80497 -39.95226,-56.12342 -42.80599,-62.78213 -2.85373,-6.65871 -17.12241,-48.51346 -15.21991,-58.97716 1.90248,-10.46369 14.26866,-61.83089 14.26866,-69.44084 0,-7.60996 2.85373,-24.73236 -3.80498,-44.70849 -6.65871,-19.97614 -6.65871,-19.02489 -9.51244,-28.53733 -2.85374,-9.51245 -21.87862,-51.36721 -21.87862,-51.36721 0,0 -12.36618,-25.6836 -21.87863,-39.95226 -9.51244,-14.26867 -14.26866,-35.19605 -19.02489,-48.51347 -4.75622,-13.31742 -10.46368,-36.14729 -4.75622,-58.02591 5.70747,-21.87862 3.80498,-31.39107 9.51245,-46.61098 5.70746,-15.21992 46.61097,-48.51347 46.61097,-48.51347 l 76.09957,-27.58609 61.83088,-5.70747 c 0,0 87.51449,0 97.97819,2.85374 10.46368,2.85373 49.4647,16.17115 49.4647,16.17115 0,0 46.61098,24.73236 57.07468,31.39107 10.46368,6.65871 53.26969,88.46573 54.22093,93.22196 0.95124,4.75622 -18.07365,75.14831 -18.07365,75.14831 0,0 -22.82986,37.09853 -33.29355,65.63587 -10.4637,28.53733 -18.07365,39.00102 -21.87862,74.19706 -3.80499,35.19605 -15.21992,54.22094 -14.26867,73.24583 0.95124,19.02489 0,51.3672 -2.85374,73.24582 -2.85373,21.87863 -18.07364,57.07467 -29.48857,64.68463 -11.41494,7.60995 -23.78112,18.07364 -39.00103,29.48858 -15.21991,11.41493 -80.85578,34.2448 -85.612,34.2448 z"
+       id="path5334"
+       inkscape:connector-curvature="0"
+       inkscape:export-filename="/home/menegon/menegon/ISMAR/ADRIPLAN/presentazione_iuav/presentazione/img/cumulative_and_buffer.png"
+       inkscape:export-xdpi="90"
+       inkscape:export-ydpi="90" />
+    <path
+       sodipodi:type="star"
+       style="fill:#969696;fill-opacity:1;stroke:#e40000;stroke-width:5;stroke-linejoin:round;stroke-miterlimit:4;stroke-opacity:1;stroke-dasharray:none"
+       id="path5360"
+       sodipodi:sides="6"
+       sodipodi:cx="340"
+       sodipodi:cy="532.36218"
+       sodipodi:r1="80"
+       sodipodi:r2="69.282028"
+       sodipodi:arg1="-1.5707963"
+       sodipodi:arg2="-1.0471976"
+       inkscape:flatsided="true"
+       inkscape:rounded="0"
+       inkscape:randomized="0"
+       d="m 340,452.36218 69.28203,40 0,80 -69.28203,40 -69.28203,-40 0,-80 z"
+       transform="matrix(0.66587112,0,0,0.66587112,210.34231,44.323193)"
+       inkscape:export-filename="/home/menegon/menegon/ISMAR/ADRIPLAN/presentazione_iuav/presentazione/img/cumulative_and_buffer.png"
+       inkscape:export-xdpi="90"
+       inkscape:export-ydpi="90" />
+    <path
+       sodipodi:type="star"
+       style="opacity:0.53497943;fill:none;stroke:#e40000;stroke-width:2;stroke-linejoin:round;stroke-miterlimit:4;stroke-opacity:1;stroke-dasharray:none;stroke-dashoffset:0"
+       id="path5360-5"
+       sodipodi:sides="6"
+       sodipodi:cx="340"
+       sodipodi:cy="532.36218"
+       sodipodi:r1="80"
+       sodipodi:r2="69.282028"
+       sodipodi:arg1="-1.5707963"
+       sodipodi:arg2="-1.0471976"
+       inkscape:flatsided="true"
+       inkscape:rounded="0"
+       inkscape:randomized="0"
+       d="m 340,452.36218 69.28203,40 0,80 -69.28203,40 -69.28203,-40 0,-80 z"
+       transform="matrix(0.66587112,0,0,0.66587112,349.6045,123.27648)"
+       inkscape:export-filename="/home/menegon/menegon/ISMAR/ADRIPLAN/presentazione_iuav/presentazione/img/cumulative_and_buffer.png"
+       inkscape:export-xdpi="90"
+       inkscape:export-ydpi="90" />
+    <path
+       sodipodi:type="star"
+       style="opacity:0.53497943;fill:none;stroke:#e40000;stroke-width:2;stroke-linejoin:round;stroke-miterlimit:4;stroke-opacity:1;stroke-dasharray:none;stroke-dashoffset:0"
+       id="path5360-5-0"
+       sodipodi:sides="6"
+       sodipodi:cx="340"
+       sodipodi:cy="532.36218"
+       sodipodi:r1="80"
+       sodipodi:r2="69.282028"
+       sodipodi:arg1="-1.5707963"
+       sodipodi:arg2="-1.0471976"
+       inkscape:flatsided="true"
+       inkscape:rounded="0"
+       inkscape:randomized="0"
+       d="m 340,452.36218 69.28203,40 0,80 -69.28203,40 -69.28203,-40 0,-80 z"
+       transform="matrix(0.66587112,0,0,0.66587112,302.99352,42.99145)"
+       inkscape:export-filename="/home/menegon/menegon/ISMAR/ADRIPLAN/presentazione_iuav/presentazione/img/cumulative_and_buffer.png"
+       inkscape:export-xdpi="90"
+       inkscape:export-ydpi="90" />
+    <path
+       sodipodi:type="star"
+       style="opacity:0.53497943;fill:none;stroke:#e40000;stroke-width:2;stroke-linejoin:round;stroke-miterlimit:4;stroke-opacity:1;stroke-dasharray:none;stroke-dashoffset:0"
+       id="path5360-5-0-6"
+       sodipodi:sides="6"
+       sodipodi:cx="340"
+       sodipodi:cy="532.36218"
+       sodipodi:r1="80"
+       sodipodi:r2="69.282028"
+       sodipodi:arg1="-1.5707963"
+       sodipodi:arg2="-1.0471976"
+       inkscape:flatsided="true"
+       inkscape:rounded="0"
+       inkscape:randomized="0"
+       d="m 340,452.36218 69.28203,40 0,80 -69.28203,40 -69.28203,-40 0,-80 z"
+       transform="matrix(0.66587112,0,0,0.66587112,258.09478,123.46673)"
+       inkscape:export-filename="/home/menegon/menegon/ISMAR/ADRIPLAN/presentazione_iuav/presentazione/img/cumulative_and_buffer.png"
+       inkscape:export-xdpi="90"
+       inkscape:export-ydpi="90" />
+    <path
+       sodipodi:type="star"
+       style="opacity:0.53497943;fill:none;stroke:#e40000;stroke-width:2;stroke-linejoin:round;stroke-miterlimit:4;stroke-opacity:1;stroke-dasharray:none;stroke-dashoffset:0"
+       id="path5360-5-2"
+       sodipodi:sides="6"
+       sodipodi:cx="340"
+       sodipodi:cy="532.36218"
+       sodipodi:r1="80"
+       sodipodi:r2="69.282028"
+       sodipodi:arg1="-1.5707963"
+       sodipodi:arg2="-1.0471976"
+       inkscape:flatsided="true"
+       inkscape:rounded="0"
+       inkscape:randomized="0"
+       d="m 340,452.36218 69.28203,40 0,80 -69.28203,40 -69.28203,-40 0,-80 z"
+       transform="matrix(0.66587112,0,0,0.66587112,210.72281,203.18101)"
+       inkscape:export-filename="/home/menegon/menegon/ISMAR/ADRIPLAN/presentazione_iuav/presentazione/img/cumulative_and_buffer.png"
+       inkscape:export-xdpi="90"
+       inkscape:export-ydpi="90" />
+    <path
+       sodipodi:type="star"
+       style="fill:#969696;fill-opacity:1;stroke:#e40000;stroke-width:5;stroke-linejoin:round;stroke-miterlimit:4;stroke-opacity:1;stroke-dasharray:none"
+       id="path5360-9"
+       sodipodi:sides="6"
+       sodipodi:cx="340"
+       sodipodi:cy="532.36218"
+       sodipodi:r1="80"
+       sodipodi:r2="69.282028"
+       sodipodi:arg1="-1.5707963"
+       sodipodi:arg2="-1.0471976"
+       inkscape:flatsided="true"
+       inkscape:rounded="0"
+       inkscape:randomized="0"
+       d="m 340,452.36218 69.28203,40 0,80 -69.28203,40 -69.28203,-40 0,-80 z"
+       transform="matrix(0.66587112,0,0,0.66587112,164.68258,123.08623)"
+       inkscape:export-filename="/home/menegon/menegon/ISMAR/ADRIPLAN/presentazione_iuav/presentazione/img/cumulative_and_buffer.png"
+       inkscape:export-xdpi="90"
+       inkscape:export-ydpi="90" />
+    <path
+       sodipodi:type="star"
+       style="fill:#969696;fill-opacity:1;stroke:#e40000;stroke-width:5;stroke-linejoin:round;stroke-miterlimit:4;stroke-opacity:1;stroke-dasharray:none"
+       id="path5360-9-3"
+       sodipodi:sides="6"
+       sodipodi:cx="340"
+       sodipodi:cy="532.36218"
+       sodipodi:r1="80"
+       sodipodi:r2="69.282028"
+       sodipodi:arg1="-1.5707963"
+       sodipodi:arg2="-1.0471976"
+       inkscape:flatsided="true"
+       inkscape:rounded="0"
+       inkscape:randomized="0"
+       d="m 340,452.36218 69.28203,40 0,80 -69.28203,40 -69.28203,-40 0,-80 z"
+       transform="matrix(0.66587112,0,0,0.66587112,120.92533,202.99077)"
+       inkscape:export-filename="/home/menegon/menegon/ISMAR/ADRIPLAN/presentazione_iuav/presentazione/img/cumulative_and_buffer.png"
+       inkscape:export-xdpi="90"
+       inkscape:export-ydpi="90" />
+    <path
+       id="path5305"
+       style="opacity:0.53497943;fill:none;stroke:#e47000;stroke-width:199.76133728;stroke-linecap:butt;stroke-linejoin:round;stroke-miterlimit:4;stroke-opacity:1;stroke-dasharray:none"
+       d="m 146.51381,554.24115 131.27173,-108.44187 59.9284,-75.14831 58.97716,-97.97818 111.29561,-41.85476 179.7852,-3.80498"
+       inkscape:connector-curvature="0" />
+    <path
+       style="fill:none;stroke:url(#linearGradient3775);stroke-width:40;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-opacity:1;stroke-dasharray:none"
+       d="m 145.08694,550.43617 131.27174,-108.44187 59.92839,-75.14831 58.97716,-97.97818 111.29561,-41.85476 179.7852,-3.80498"
+       inkscape:connector-curvature="0"
+       inkscape:export-filename="/home/menegon/menegon/ISMAR/ADRIPLAN/presentazione_iuav/presentazione/img/cumulative_and_buffer.png"
+       inkscape:export-xdpi="90"
+       inkscape:export-ydpi="90" />
+    <text
+       xml:space="preserve"
+       style="font-size:26.63484573px;font-style:normal;font-weight:normal;line-height:125%;letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none;font-family:Sans"
+       x="348"
+       y="712.36218"
+       id="text6350"
+       sodipodi:linespacing="125%"
+       inkscape:export-filename="/home/menegon/menegon/ISMAR/ADRIPLAN/presentazione_iuav/presentazione/img/cumulative_and_buffer.png"
+       inkscape:export-xdpi="90"
+       inkscape:export-ydpi="90"><tspan
+         sodipodi:role="line"
+         id="tspan6352"
+         x="348"
+         y="712.36218">Marine mammals </tspan></text>
+    <text
+       xml:space="preserve"
+       style="font-size:26.63484573px;font-style:normal;font-weight:normal;line-height:125%;letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none;font-family:Sans"
+       x="8"
+       y="542.36218"
+       id="text6354"
+       sodipodi:linespacing="125%"
+       inkscape:export-filename="/home/menegon/menegon/ISMAR/ADRIPLAN/presentazione_iuav/presentazione/img/cumulative_and_buffer.png"
+       inkscape:export-xdpi="90"
+       inkscape:export-ydpi="90"><tspan
+         sodipodi:role="line"
+         id="tspan6356"
+         x="8"
+         y="542.36218">Motorway</tspan><tspan
+         sodipodi:role="line"
+         x="8"
+         y="575.65576"
+         id="tspan6358">of the sea</tspan></text>
+    <path
+       style="fill:none;stroke:#000000;stroke-width:0.53318989px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1;marker-start:url(#Arrow1Lstart);marker-end:url(#Arrow1Lend)"
+       d="m 178.60779,550.43445 52.57766,64.88492"
+       id="path5532"
+       inkscape:connector-curvature="0"
+       inkscape:export-filename="/home/menegon/menegon/ISMAR/ADRIPLAN/presentazione_iuav/presentazione/img/cumulative_and_buffer.png"
+       inkscape:export-xdpi="90"
+       inkscape:export-ydpi="90" />
+    <text
+       xml:space="preserve"
+       style="font-size:26.63484573px;font-style:normal;font-weight:normal;line-height:125%;letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none;font-family:Sans"
+       x="128"
+       y="612.36218"
+       id="text6346"
+       sodipodi:linespacing="125%"
+       inkscape:export-xdpi="90"
+       inkscape:export-ydpi="90"
+       inkscape:export-filename="/home/menegon/menegon/ISMAR/ADRIPLAN/presentazione_iuav/presentazione/img/cumulative_and_buffer.png"><tspan
+         sodipodi:role="line"
+         id="tspan6348"
+         x="128"
+         y="612.36218">Buffer</tspan></text>
+  </g>
+</svg>
