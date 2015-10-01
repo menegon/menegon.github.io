@@ -1,36 +1,11 @@
-<!doctype html>
-<html lang="en">
-
-  <head>
-    <meta charset="utf-8">
-    
-    <title>Atlante della laguna: un modello di conoscenza condivisa</title>
-
-    <meta name="apple-mobile-web-app-capable" content="yes" />
-    <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent" />
-
-    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
-    
-    <link rel="stylesheet" href="css/reveal.min.css">
-    <link rel="stylesheet" href="css/theme/default.css" id="theme">
-
-    <!-- For syntax highlighting -->
-    <link rel="stylesheet" href="lib/css/zenburn.css">
-
-    <!-- If the query includes 'print-pdf', include the PDF print sheet -->
-    <script>
-      if( window.location.search.match( /print-pdf/gi ) ) {
-      var link = document.createElement( 'link' );
-      link.rel = 'stylesheet';
-      link.type = 'text/css';
-      link.href = 'css/print/pdf.css';
-      document.getElementsByTagName( 'head' )[0].appendChild( link );
-      }
-    </script>
-
-    <!--[if lt IE 9]>
-	<script src="lib/js/html5shiv.js"></script>
-	<![endif]-->
+---
+layout: slide
+title: Il Software Open Source come modello di sviluppo collaborativo, principi, strumenti e applicazioni (full version).
+description: An introduction
+theme: solarized
+transition: slide
+date:   2014-10-23
+---
     <style>
       .blue {
         color: #1b91ff;
@@ -43,14 +18,8 @@
       }
 
     </style>
-  </head>
 
-  <body>
 
-    <div class="reveal">
-
-      <!-- Any section element inside of this container is displayed as a slide -->
-      <div class="slides">
 	<section>
 	  <h3>Atlante della laguna: un modello di conoscenza condivisa</h3>
 	  <p><a src=""><u>S. Menegon*</u>, A. Mulazzani**, C. Ferrari**,</a><p>
@@ -64,10 +33,10 @@
 	</section>
 
 	<!-- *********************************************************************** -->
-	
+
 	<section>
 	  <h2>Il filo rosso</h2>
-	  <svg id="filo_rosso" height="270" width="800" 
+	  <svg id="filo_rosso" height="270" width="800"
 	       xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" >
 	    <image x="0" y="0" height="270" width="800"  xlink:href="img/fil_rouge.svg" />
 	  </svg>
@@ -84,7 +53,7 @@
 	</section>
 
 	<!-- *********************************************************************** -->
-	
+
 	<section>
 	  <h3>Contesto</h3>
 	  <img height="480" src="img/ambito_geografico.jpg"/>
@@ -98,7 +67,7 @@
           <p>Complessità ambientale</p>
           <img height="140" src="img/Graphics/laguna_sistema.png" alt="Attori"/>
 	  <img height="140" src="img/acqua_alta.jpg" alt=""/>
-          <p>Complessità del quadro normativo <small>Legge speciale per Venezia, Porto Marghera Sito Inquinato di Interesse Nazionale (SIN)</small></p>          
+          <p>Complessità del quadro normativo <small>Legge speciale per Venezia, Porto Marghera Sito Inquinato di Interesse Nazionale (SIN)</small></p>
           <img height="140" src="img/Graphics/sito_bonifica.png" alt="SIN Porto Marghera"/>
           <img height="140" src="img/Graphics/enti.png" alt="Enti"/>
           <p>Complessità e sovrapposizione degli strumenti di monitoraggio e di gestione </p>
@@ -249,7 +218,7 @@
 	<section>
 	  <h3>I contenuti</h3>
           <img height="480" src="img/home_atlante.png" />
-	  <p>Alcuni numeri: 
+	  <p>Alcuni numeri:
 	    <span class="blue">11 Categorie tematiche</span>,
 	    <span class="green">443 Strati informativi (layer)</span>,
 	    <br/>
@@ -472,7 +441,7 @@
 	</section>
 
 
-	
+
 	<!--section>
 	    <iframe style="border: none;" height="100%" width="100%" src="http://cigno.ve.ismar.cnr.it/maps/30/view"></iframe>
 </section-->
@@ -557,7 +526,7 @@
 	    favorire il coinvolgimento dei cittadini</blockquote>
 	  <blockquote class="noquote">Open Science: access,
 	    data, software, services
-	  </blockquote> 
+	  </blockquote>
 	  <img height="150" src="img/50_paesaggo_1.jpg" alt=""/>
 	  <img height="150" src="img/nave.JPG" alt=""/>
 	  <img height="150" src="img/mappa_pressioni_antropiche.png" alt=""/>
@@ -569,43 +538,3 @@
 	      scalabile sia dal punto di vista tematico che
 	      spaziale</blockquote-->
 	</section>
-	
-      </div>
-
-    </div>
-
-    <script src="lib/js/head.min.js"></script>
-    <script src="js/reveal.min.js"></script>
-
-    <script>
-
-      // Full list of configuration options available here:
-      // https://github.com/hakimel/reveal.js#configuration
-      Reveal.initialize({
-      controls: true,
-      progress: true,
-      history: true,
-      center: true,
-
-      theme: Reveal.getQueryHash().theme || 'night', // available themes are in /css/theme
-      transition: Reveal.getQueryHash().transition || 'fade', // default/cube/page/concave/zoom/linear/fade/none
-
-      // Parallax scrolling
-      // parallaxBackgroundImage: 'https://s3.amazonaws.com/hakim-static/reveal-js/reveal-parallax-1.jpg',
-      // parallaxBackgroundSize: '2100px 900px',
-
-      // Optional libraries used to extend on reveal.js
-      dependencies: [
-      { src: 'lib/js/classList.js', condition: function() { return !document.body.classList; } },
-      { src: 'plugin/markdown/marked.js', condition: function() { return !!document.querySelector( '[data-markdown]' ); } },
-      { src: 'plugin/markdown/markdown.js', condition: function() { return !!document.querySelector( '[data-markdown]' ); } },
-      { src: 'plugin/highlight/highlight.js', async: true, callback: function() { hljs.initHighlightingOnLoad(); } },
-      { src: 'plugin/zoom-js/zoom.js', async: true, condition: function() { return !!document.body.classList; } },
-      { src: 'plugin/notes/notes.js', async: true, condition: function() { return !!document.body.classList; } }
-      ]
-      });
-
-    </script>
-
-  </body>
-</html>
