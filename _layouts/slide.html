@@ -1,3 +1,4 @@
+{% include base.html %}
 <!doctype html>
 <html lang="en">
   <head>
@@ -25,15 +26,15 @@
 
     <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no, minimal-ui">
 
-    <link rel="stylesheet" href="{{ "/ext/reveal.js/css/reveal.css" | prepend: site.baseurl }}"/>
+    <link rel="stylesheet" href="{{base}}/ext/reveal.js/css/reveal.css"/>
     {%if page.theme %}
-      <link rel="stylesheet" href="{{ "/ext/reveal.js/css/theme/" | prepend: site.baseurl | append: page.theme | append: '.css' }}" id="theme"/>
+      <link rel="stylesheet" href="{{ base }}{{ "/ext/reveal.js/css/theme/" | append: page.theme | append: '.css' }}" id="theme"/>
     {% else %}
-      <link rel="stylesheet" href="{{ "/ext/reveal.js/css/theme/black.css" | prepend: site.baseurl }}" id="theme"/>
+      <link rel="stylesheet" href="{{ base }}/ext/reveal.js/css/theme/black.css" id="theme"/>
     {% endif %}
 
     <!-- Code syntax highlighting -->
-    <link rel="stylesheet" href="{{ "/ext/reveal.js/lib/css/zenburn.css" | prepend: site.baseurl }}"/>
+    <link rel="stylesheet" href="{{ base }}/ext/reveal.js/lib/css/zenburn.css"/>
 
     <!-- Printing and PDF exports -->
     <script>
@@ -44,7 +45,7 @@
       document.getElementsByTagName( 'head' )[0].appendChild( link );
     </script>
 
-    <link rel="apple-touch-icon" href="{{ "/apple-touch-icon.png" | prepend: site.baseurl }}" />
+    <link rel="apple-touch-icon" href="{{ base }}/apple-touch-icon.png" />
 
     <link rel="canonical" href="{{ page.url | replace:'index.html','' | prepend: site.baseurl | prepend: site.url }}">
 
@@ -61,8 +62,8 @@
       </div>
     </div>
 
-    <script src="{{ "/ext/reveal.js/lib/js/head.min.js" | prepend: site.baseurl }}"></script>
-    <script src="{{ "/ext/reveal.js/js/reveal.js" | prepend: site.baseurl }}"></script>
+    <script src="{{ base }}/ext/reveal.js/lib/js/head.min.js"></script>
+    <script src="{{ base }}/ext/reveal.js/js/reveal.js"></script>
     <script>
       // Full list of configuration options available at:
       // https://github.com/hakimel/reveal.js#configuration
@@ -79,12 +80,12 @@
 
         // Optional reveal.js plugins
         dependencies: [
-          { src: '{{ "/ext/reveal.js/lib/js/classList.js" | prepend: site.baseurl }}', condition: function() { return !document.body.classList; } },
-          { src: '{{ "/ext/reveal.js/plugin/markdown/marked.js" | prepend: site.baseurl }}', condition: function() { return !!document.querySelector( '[data-markdown]' ); } },
-          { src: '{{ "/ext/reveal.js/plugin/markdown/markdown.js" | prepend: site.baseurl }}', condition: function() { return !!document.querySelector( '[data-markdown]' ); } },
-          { src: '{{ "/ext/reveal.js/plugin/highlight/highlight.js" | prepend: site.baseurl }}', async: true, condition: function() { return !!document.querySelector( 'pre code' ); }, callback: function() { hljs.initHighlightingOnLoad(); } },
-          { src: '{{ "/ext/reveal.js/plugin/zoom-js/zoom.js" | prepend: site.baseurl }}', async: true },
-          { src: '{{ "/ext/reveal.js/plugin/notes/notes.js" | prepend: site.baseurl }}', async: true }
+          { src: '{{ base }}/ext/reveal.js/lib/js/classList.js', condition: function() { return !document.body.classList; } },
+          { src: '{{ base }}/ext/reveal.js/plugin/markdown/marked.js', condition: function() { return !!document.querySelector( '[data-markdown]' ); } },
+          { src: '{{ base }}/ext/reveal.js/plugin/markdown/markdown.js', condition: function() { return !!document.querySelector( '[data-markdown]' ); } },
+          { src: '{{ base }}/ext/reveal.js/plugin/highlight/highlight.js', async: true, condition: function() { return !!document.querySelector( 'pre code' ); }, callback: function() { hljs.initHighlightingOnLoad(); } },
+          { src: '{{ base }}/ext/reveal.js/plugin/zoom-js/zoom.js', async: true },
+          { src: '{{ base }}/ext/reveal.js/plugin/notes/notes.js', async: true }
         ]
       });
 
