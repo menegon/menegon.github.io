@@ -69,7 +69,8 @@
       // https://github.com/hakimel/reveal.js#configuration
       Reveal.initialize({
         controls: true,
-        progress: true,
+          // progress: true,
+        progress: false,
         history: true,
         center: true,
         {%if page.transition %}
@@ -88,7 +89,10 @@
           { src: '{{ base }}/ext/reveal.js/plugin/notes/notes.js', async: true }
         ]
       });
-
+     Reveal.addEventListener( 'ready', function( event ) {
+         //document.getElementsByTagName('video')[0].setAttribute('preload','auto');
+         document.getElementsByTagName('video')[0].setAttribute('controls','controls')
+     } );
     </script>
 
   </body>
