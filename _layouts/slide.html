@@ -48,7 +48,13 @@
     <link rel="apple-touch-icon" href="{{ base }}/apple-touch-icon.png" />
 
     <link rel="canonical" href="{{ page.url | replace:'index.html','' | prepend: site.baseurl | prepend: site.url }}">
-
+    <!--
+         page.url {{ page.url }}
+         site.baseurl {{ site.baseurl }}
+         site.url {{ site.url }}
+         base {{ page.url | prepend: '#' | split: '/' | size | minus: 1 }}
+         {{ relative_directory }}
+    -->
     <!--[if lt IE 9]>
     <script src="lib/js/html5shiv.js"></script>
     <![endif]-->
@@ -79,6 +85,10 @@
           transition: 'slide', // none/fade/slide/convex/concave/zoom
         {% endif %}
 
+        math: {
+            mathjax: 'http://cdn.mathjax.org/mathjax/latest/MathJax.js',
+            config: 'TeX-AMS_HTML-full' // See http://docs.mathjax.org/en/latest/config-files.html
+        },
         // Optional reveal.js plugins
         dependencies: [
           { src: '{{ base }}/ext/reveal.js/lib/js/classList.js', condition: function() { return !document.body.classList; } },
@@ -86,7 +96,8 @@
           { src: '{{ base }}/ext/reveal.js/plugin/markdown/markdown.js', condition: function() { return !!document.querySelector( '[data-markdown]' ); } },
           { src: '{{ base }}/ext/reveal.js/plugin/highlight/highlight.js', async: true, condition: function() { return !!document.querySelector( 'pre code' ); }, callback: function() { hljs.initHighlightingOnLoad(); } },
           { src: '{{ base }}/ext/reveal.js/plugin/zoom-js/zoom.js', async: true },
-          { src: '{{ base }}/ext/reveal.js/plugin/notes/notes.js', async: true }
+          { src: '{{ base }}/ext/reveal.js/plugin/notes/notes.js', async: true },
+          { src: '{{ base }}/ext/reveal.js/plugin/math/math.js', async: true }
         ]
       });
      Reveal.addEventListener( 'ready', function( event ) {
