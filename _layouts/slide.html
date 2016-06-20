@@ -52,8 +52,7 @@
          page.url {{ page.url }}
          site.baseurl {{ site.baseurl }}
          site.url {{ site.url }}
-         base {{ page.url | prepend: '#' | split: '/' | size | minus: 1 }}
-         {{ relative_directory }}
+         base {{ page.url | append: '#' | split: '/' | size | minus: 1 }}
     -->
     <!--[if lt IE 9]>
     <script src="lib/js/html5shiv.js"></script>
