@@ -24,7 +24,7 @@ transition: slide
 date:   2016-06-24
 ---
 <style>
-- .blue {
+ .blue {
      color: #1b91ff;
  }
  .red {
@@ -38,7 +38,7 @@ date:   2016-06-24
 
 <section>
     <h3>Development and integration of geopython tools to support Integrated Coastal Management and Maritime Spatial Planning</h3>
-    <p><a src="">Stefano Menegon</a> & <a src="">Alessandro Sarretta</a></p>
+    <p><a src="">Stefano Menegon</a> & Alessandro Sarretta</p>
     <p><small>stefano.menegon at ismar.cnr.it</small></p>
     <p>&nbsp; </p>
     <h4>CNR - Institute of Marine Sciences</h4>
@@ -49,12 +49,115 @@ date:   2016-06-24
 <!-- *********************************************************************** -->
 <section>
     <h3>Context</h3>
-    <img height="350" src="img/uses.png" alt=""/>
+    <img height="300" src="img/uses.png" alt=""/>
     <ul>
         <li>Maritime Spatial Planning Directive - MSPD (2014/89/EU)</li>
         <li>Planning of coastal and marine areas</li>
-        <li>Tools to support Ecosystem Based Management: conflict between uses, cumulative impacts on environment</li>
+        <li>Ecosystem-Based Management vs. Integrated-Use Management</li>
+        <li>MSP as a mechanism for achieving ‘blue growth’</li>
     </ul>
+    <aside class="notes">
+        http://www.homepages.ucl.ac.uk/~ucfwpej/pdf/MPAsandMSP.pdf
+    </aside>
+</section>
+
+<section>
+    <h3>Tools to support Ecosystem Based Management</h3>
+    <img height="450" data-src="img/ebmtoolsmanagement.png"/>
+    <a href="https://www.ebmtoolsdatabase.org/">https://www.ebmtoolsdatabase.org/</a>
+</section>
+
+<section>
+    <h3>Tools to support MSP</h3>
+    <img height="500" data-src="img/paper_stelzmuller.png"/>
+</section>
+
+<section>
+    <h3>Types of MSP tools</h3>
+
+    <p>Identifying spatial
+        interactions between activities, <span class="red">Risk assessment of cumulative
+        effects of human pressures</span>, <span class="blue">Decision support systems</span>
+    <p>Web-based vs. GIS-based tools</p>
+    <p>Designed for different users (programmer, scientist, strategic planner, case officer, public),</p>
+    <p>To addresse  different stages of the plan</p>
+</section>
+
+<section>
+    <h3>ADRIPLAN project</h3>
+    <div style="float: left; width: 40%;">
+        <img style="width: 100%" src="img/adriplan_partners.png" alt=""/>
+    </div>
+    <div style="float: right; width: 60%;">
+        <ul>
+            <li>EU funded project to develop MSP in the Adriatic-Ionian Macroregion</li>
+            <li>Transboundary (4 countries: Croatia, Italy, Slovenia, Greece), 8 Scientific Partners and 9 Institutional Partners, 17 observers</li>
+            <li>An integrated infrastructure for publishing, sharing and processing scientifc data</li>
+        </ul>
+    </div>
+    <p><a href="http://www.adriplan.eu">www.adriplan.eu</a></p>
+    <aside class="notes">
+    </aside>
+</section>
+
+<section data-background-image="img/architecture.png" data-background-size="contain">
+    <aside class="notes">
+        Schema utilizzando per ADRIPLAN ma in realtà è un approccio abbastanza generale
+    </aside>
+</section>
+
+<section>
+    <h3>1 - Adriplan Data Portal</h3>
+    <img style="height: 230px;" src="img/adriplan_data_portal.png" alt=""/>
+    <img style="height: 230px;" src="img/architecture_zoom1.png" alt=""/>
+    <ul>
+        <li>GeoNode fork: GeoDjango, OWSlib, PyCSW</li>
+        <li>Geospatial data storage / archiving, discovering, sharing</li>
+        <li>Interoperable services: collaborative SDI</li>
+        <li>Interactive mapping</li>
+        <li>
+            <a href="http://data.adriplan.eu">http://data.adriplan.eu</a>
+        </li>
+    </ul>
+</section>
+
+<section>
+    <h3>2 - MSPTools</h3>
+    <img style="height: 500px;" src="img/architecture_zoom2.png" alt=""/>
+</section>
+<section>
+    <h3>2 - MSPTools</h3>
+    <ul>
+        <li>GeoNode plugin</li>
+        <li>Direct interaction with stored data</li>
+        <li>The users can build several scenarios (called Case Studies) by choosing the analysis area, the data layers, the analysis grid cell</li>
+        <li>The output includes: geographical layers, raw data,
+            base statistics and graphs</li>
+        <li>The spatial outputs from each run are automatically saved and
+            published through the portal</li>
+    </ul>
+    <aside class="notes">
+        Case Study concept. It allows users to configure a
+        simulation through a graphical interface: to choose the area
+        of analysis, the grid cell size (hexagonal grid), to define
+        the geographical resources (layers) to be used to model the
+        different phenomena which can be, depending on the context,
+        uses and activities or environmental components.  Each user
+        can create more "Case Studies" and compare the results.
+
+        The outputs from each run on “Case Studies” are
+        automatically saved as “geographical layers” and published
+        through the portal. The layer created is initially
+        accessible only for admin users but it is possible to modify
+        the access rules to allow the access also for other
+        registered or non-registered users.
+
+        For each "Case Study" a summary page is available that lists
+        general information (e.g.  cells number, total score). In
+        the next semester this information will be integrated with
+        graphs and statistics automatically generated starting from
+        the results of analyses.
+    </aside>
 </section>
 
 <section>
@@ -91,11 +194,6 @@ date:   2016-06-24
         </small></p>
 </section>
 
-<section data-background-image="img/cumulative_impact_schema.png" data-background-size="contain">
-    <aside class="notes">
-    </aside>
-</section>
-
 <section>
     <h3>Cumulative impact</h3>
 
@@ -116,77 +214,8 @@ date:   2016-06-24
     </ul>
 </section>
 
-<section>
-    <h3>ADRIPLAN project</h3>
-    <div style="float: left; width: 40%;">
-        <img style="width: 100%" src="img/adriplan_partners.png" alt=""/>
-    </div>
-    <div style="float: right; width: 60%;">
-        <ul>
-            <li>EU funded project to develop MSP in the Adriatic-Ionian Macroregion</li>
-            <li>Transboundary (4 countries: Croatia, Italy, Slovenia, Greece), 8 Scientific Partners and 9 Institutional Partners, 17 observers</li>
-            <!--li>An integrated infrastructure for publishing, sharing and processing scientifc data</li-->
-        </ul>
-    </div>
-    <p><a href="http://www.adriplan.eu">www.adriplan.eu</a></p>
+<section data-background-image="img/cumulative_impact_schema.png" data-background-size="contain">
     <aside class="notes">
-    </aside>
-</section>
-
-<section data-background-image="img/architecture.png" data-background-size="contain">
-    <aside class="notes">
-        Schema utilizzando per ADRIPLAN ma in realtà è un approccio abbastanza generale
-    </aside>
-</section>
-
-<section>
-    <h3>1 - Adriplan Data Portal</h3>
-    <img style="height: 230px;" src="img/adriplan_data_portal.png" alt=""/>
-    <img style="height: 230px;" src="img/adriplan_map.png" alt=""/>
-    <ul>
-        <li>GeoNode fork: GeoDjango, OWSlib, PyCSW</li>
-        <li>Geospatial data storage / archiving, discovering, sharing</li>
-        <li>Interoperable services: collaborative SDI</li>
-        <li>Interactive mapping</li>
-        <li>
-            <a href="http://data.adriplan.eu">http://data.adriplan.eu</a>
-        </li>
-    </ul>
-</section>
-
-<section>
-    <h3>2 - MSPTools</h3>
-    <ul>
-        <li>GeoNode plugin</li>
-        <li>Data storage/sharing and processing integration</li>
-        <li>Case Study concept to configure a simulation / run</li>
-        <li>The outputs from each run are automatically saved and
-            published through the portal</li>
-        <li>The raw data are also available</li>
-        <li>The output includes: geographical layers, raw data,
-            base statistics and graphs</li>
-    </ul>
-    <aside class="notes">
-        Case Study concept. It allows users to configure a
-        simulation through a graphical interface: to choose the area
-        of analysis, the grid cell size (hexagonal grid), to define
-        the geographical resources (layers) to be used to model the
-        different phenomena which can be, depending on the context,
-        uses and activities or environmental components.  Each user
-        can create more "Case Studies" and compare the results.
-
-        The outputs from each run on “Case Studies” are
-        automatically saved as “geographical layers” and published
-        through the portal. The layer created is initially
-        accessible only for admin users but it is possible to modify
-        the access rules to allow the access also for other
-        registered or non-registered users.
-
-        For each "Case Study" a summary page is available that lists
-        general information (e.g.  cells number, total score). In
-        the next semester this information will be integrated with
-        graphs and statistics automatically generated starting from
-        the results of analyses.
     </aside>
 </section>
 
@@ -204,20 +233,37 @@ date:   2016-06-24
 </section>
 
 <section>
-    <h3>Future steps</h3>
-    <ul>
-        <li>Open source release</li>
-        <li>WPS</li>
-    </ul>
+    <h3>3 - Analysis</h3>
+    <div style="float: left; width: 40%;">
+        <img style="width: 100%" src="img/jupyter.png" alt=""/>
+    </div>
+    <div style="float: right; width: 60%;">
+        <img style="height: 200px;" src="img/architecture_zoom3.png" alt=""/>
+    </div>
 </section>
 
+<section>
+    <h3>5 - Desktop applications</h3>
+    <!--img style="height: 150px;" src="img/architecture_zoom5.png" alt=""/-->
+    <img style="height: 550px;" src="img/qgis_geoserver_explorer.png" alt=""/>
+</section>
 
-
+<section>
+    <h3>Future steps</h3>
+    <ul>
+        <li>Improve the integration in the ADRIPLAN data portal</li>
+        <li>Interactive dashboard for summary/statistics per area</li>
+        <li>Add a WPS service</li>
+        <li>Performance optimization through specific formats for storage (HDF5, numpy.memmap)</li>
+        <li>Add new module related with the MSP process (e.g. scenario planning and analysis, sectoral aspects (traffic, fishery, aquaculture, energy, etc.), socio-economic aspects, participation processes). </li>
+        <li>Release the MSPTools as FOSS</li>
+    </ul>
+</section>
 
 <section>
     <h3>Development and integration of geopython tools to support Integrated Coastal Management and Maritime Spatial Planning</h3>
     <span xmlns:cc="http://creativecommons.org/ns#"
-          property="cc:attributionName">by S. Menegon</span>
+          property="cc:attributionName">by S. Menegon & A. Sarretta</span>
     is licensed under a <a rel="license"
                            href="http://creativecommons.org/licenses/by/4.0/">Creative
         Commons Attribution 4.0 International
