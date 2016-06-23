@@ -48,12 +48,12 @@ date:   2016-06-24
 
 <!-- *********************************************************************** -->
 <section>
-    <h3>Context</h3>
+    <h3>Context: Maritime Spatial Planning</h3>
     <img height="200" src="img/uses.png" alt=""/>
     <ul>
         <li>Maritime Spatial Planning Directive - MSPD (2014/89/EU)</li>
         <li>Planning of coastal and marine areas</li>
-        <li>Ecosystem-Based Management vs. Integrated-Use Management</li>
+        <li>Development of socio-economics activities (Integrated-Use Management) while preserving the environment (Ecosystem-Based Management)</li>
         <!--li>MSP as a mechanism for achieving "Good Environmental Status" (GES) by 2020 <li>MSP as a mechanism for achieving ‘Blue Growth’</li-->
         <li>Suitable tools and  geospatial data</li>
     </ul>
@@ -102,7 +102,7 @@ date:   2016-06-24
         </ul>
     </div>
     <ul>
-        <li>An integrated infrastructure for publishing, sharing and processing scientifc data</li>
+        <li>An integrated web-infrastructure for publishing, sharing and processing scientifc data</li>
         <li>Actually, the infrastructure and MSP tools are currently under further development</li>
     </ul>
 
@@ -250,6 +250,26 @@ date:   2016-06-24
 </section>
 
 <section>
+    <h3>MSPTools - GeoNode plugin</h3>
+    <img height="500px" data-src="img/case_studies.png">
+</section>
+
+<section>
+    <h3>MSPTools - GeoNode plugin</h3>
+    <img height="500px" data-src="img/coexists_oputput.png">
+</section>
+
+<section>
+    <h3>MSPTools - GeoNode plugin</h3>
+    <img height="500px" data-src="img/cumulative_impact_2016.png">
+</section>
+
+<section>
+    <h3>MSPTools - GeoNode plugin</h3>
+    <img height="500px" data-src="img/cumulative_impact_maps.png">
+</section>
+
+<section>
     <h3>MSPTools - RectifiedGrid</h3>
     <ul>
         <li>Geospatial grid-based analyses</li>
@@ -258,40 +278,41 @@ date:   2016-06-24
             functionalities (i.e. projection awareness, bounding boxes)</li>
         <li>Simply support of "map-algebra" through Numpy syntax (ex. map_a + map_b)
         <li>Input / Output from geospatial formats through rasterio / fiona
-        <li>Supports EEA reference grid</li>
+        <li>Supports EEA reference grid (based on Lambert Azimuthal Equal Area - 1, 10, 100 km)</li>
     </ul>
     <small><a href="https://github.com/CNR-ISMAR/rectifiedgrid">https://github.com/CNR-ISMAR/rectifiedgrid</a> (coming soon)</small>
 </section>
 
 <section>
-    <h3>3 - Analysis</h3>
-    <div style="float: left; width: 40%;">
-        <img style="width: 100%" src="img/jupyter.png" alt=""/>
+    <h3>3 - Analysis, Rapid prototyping</h3>
+    <div style="float: left; width: 33%;">
+        <img style="height: 500px" src="img/jupyter_inputs.png" alt=""/>
     </div>
-    <div style="float: right; width: 60%;">
-        <img style="height: 200px;" src="img/architecture_zoom3.png" alt=""/>
-        <ul>
-            <li>Rapid prototyping</li>
-            <li>Jupyter notebook</li>
-        </ul>
+    <div style="float: left; width: 33%;">
+        <img style="height: 500px" src="img/jupyter.png" alt=""/>
     </div>
+    <div style="float: right; width: 33%;">
+        <img style="height: 500px;" src="img/jupyter_maps.png" alt=""/>
+    </div>
+    <p>Jupyter notebook, reusable ".ipynb" files</p>
 </section>
 
 <section>
-    <h3>5 - Desktop applications</h3>
+    <h4>5 - Desktop applications</h4>
     <!--img style="height: 150px;" src="img/architecture_zoom5.png" alt=""/-->
-    <img style="height: 400px;" src="img/qgis_geoserver_explorer.png" alt=""/>
-    <p>QGis GeoServer Explorer plugin</p>
+    <img style="height: 450px;" src="img/qgis_geoserver_explorer.png" alt=""/>
+    <p><small>QGis GeoServer Explorer plugin: to configure GeoServer through QGis (e.g. manage layers, upload new layers, create a manage styles)</small></p>
+    <small><a href="http://boundlessgeo.github.io/qgis-plugins-documentation/geoserver/">http://boundlessgeo.github.io/qgis-plugins-documentation/geoserver/</a></small>
 </section>
 
 <section>
     <h3>Future steps</h3>
     <ul>
         <li>Improve the integration in the ADRIPLAN data portal</li>
-        <li>Interactive dashboard for summary/statistics per area (e.g. Bokeh)</li>
-        <li>Add a WPS service</li>
+        <li>Interactive dashboard for summary/statistics (e.g. Bokeh)</li>
+        <li>Add a WPS service (e.g. PyWPS)</li>
         <li>Performance optimization through specific formats for storage (HDF5, numpy.memmap)</li>
-        <li>Add new module related with the MSP process (e.g. scenario planning and analysis, sectoral aspects (traffic, fishery, aquaculture, energy, etc.), socio-economic aspects, participation processes). </li>
+        <li>Add new module related with the MSP process (e.g. scenario planning and analysis, sectoral aspects (traffic, fishery, aquaculture, energy, etc.), socio-economic aspects, participation processes) - (e.g. PyGRASS) </li>
         <li>Release the MSPTools as FOSS</li>
     </ul>
 </section>
