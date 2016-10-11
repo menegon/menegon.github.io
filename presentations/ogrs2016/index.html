@@ -1,0 +1,405 @@
+---
+layout: slide
+title: Open source tools to support Integrated Coastal Management and Maritime Spatial Planning
+description: "This paper describes an open source suite of libraries and tools to support research activities on
+marine and coastal environment. The suite was initially implemented for the ADRIPLAN portal,
+an integrated web platform aimed at supporting Maritime Spatial Planning (MSP) activities and
+other activities concerning the managing of marine environment for the Adriatic-Ionian region.
+The main elements of the implemented solutions are: i) a GeoNode implementation for sharing
+geospatial datasets and maps; ii) a new python library (RectifiedGrid) that facilitates the work
+with geographical grid data; iii) a new python library (Tools4MSP) to perform spatial analysis and
+assessment of human uses, pressures and the potential impact of maritime and coastal activities on
+the environment; iv) a new GeoNode plugin (called GeoNode-Tools4MSP) that provides interactive
+widgets to set up the analyses and to visualize and explore the results.
+The Tools4MSP and the developed software have been released as FOSS under the GPL3 license
+and are currently under further development."
+theme: white
+transition: slide
+date:   2016-10-13
+---
+<style>
+ .blue {
+     color: #1b91ff;
+ }
+ .red {
+     color: #ff2c2d;
+ }
+ .green {
+     color: #17ff2e;
+ }
+
+ .left {
+     left:-8.33%;
+     text-align: left;
+     float: left;
+     width:50%;
+     z-index:-10;
+
+ }
+
+ .right {
+     left:31.25%;
+     top: 75px;
+     float: right;
+     text-align: right;
+     z-index:-10;
+     width:50%;
+
+ }
+</style>
+
+<section>
+    <h3>Open source tools to support Integrated Coastal Management and Maritime Spatial Planning</h3>
+    <p><a src="">Stefano Menegon&sup1;</a>, Alessandro Sarretta&sup1;, Andrea Barbanti&sup1;, Elena Gissi&sup2;, Chiara Venier&sup1;</p>
+    <p><small>stefano.menegon at ismar.cnr.it</small></p>
+    <h5>&sup1;CNR - Institute of Marine Sciences</h5>
+    <h5>&sup2;University IUAV of Venice</h5>
+    <p>Perugia, October 13, 2016</p>
+    <p><small><a href="https://peerj.com/preprints/2245/">https://peerj.com/preprints/2245/</a></small></p>
+</section>
+
+<!-- *********************************************************************** -->
+<section>
+    <h3>Context: Maritime Spatial Planning</h3>
+    <img height="150" src="img/uses.png" alt=""/>
+    <ul>
+        <li>MSP: planning of coastal and marine areas</li>
+        <li>It's about planning when and where human activities take place at sea – to ensure these are as efficient and sustainable as possible - <strong>Maritime Spatial Planning Directive - MSPD (2014/89/EU)</strong></li>
+        <li>Development of socio-economics activities (Integrated-Use Management) while preserving the environment (Ecosystem-Based Management)</li>
+        <!--li>MSP as a mechanism for achieving "Good Environmental Status" (GES) by 2020 <li>MSP as a mechanism for achieving ‘Blue Growth’</li-->
+    </ul>
+    <aside class="notes">
+        http://www.homepages.ucl.ac.uk/~ucfwpej/pdf/MPAsandMSP.pdf
+    </aside>
+</section>
+
+<section>
+    <h3>ADRIPLAN project</h3>
+    <div style="float: left; width: 55%;">
+        <img width="100%" data-src="img/adriplan_case_study.png"/>
+    </div>
+    <div style="float: right; width: 45%;">
+        <ul>
+            <li>EU funded project to develop MSP in the Adriatic-Ionian Macroregion</li>
+            <li>December 2013 - July 2015</li>
+            <li>Transboundary (4 countries: Croatia, Italy, Slovenia, Greece), 8 Scientific Partners and 9 Institutional Partners, 17 observers</li>
+        </ul>
+    </div>
+    <p><a href="http://www.adriplan.eu">www.adriplan.eu</a></p>
+    <aside class="notes">
+    </aside>
+</section>
+
+<section>
+    <h4>MSP Issues & Requirements</h4>
+    <img height="400px" src="img/uses2.png"/>
+    <img height="400px" src="img/air_catchments.jpg"/>
+    <small class="right" style="margin-top: -1em;">Analysis: Daniel Depellegrin (CNR-ISMAR)</small>
+    <div>
+        <ul>
+            <li>Relevant and multidisciplinary data, collected from different sources (i.e. regions, countries)</li>
+            <li>A complex process involving a community of experts, planners, stakeholders, etc. etc. </li>
+        </ul>
+    </div>
+</section>
+
+<section>
+    <h3>Tools to support Ecosystem Based Management</h3>
+    <img height="450" data-src="img/ebmtoolsmanagement.png"/>
+    <a href="https://www.ebmtoolsdatabase.org/">https://www.ebmtoolsdatabase.org/</a>
+</section>
+
+<section>
+    <h3>Tools to support MSP</h3>
+    <img height="450" data-src="img/paper_stelzmuller.png"/>
+    <blockquote><small>Stelzenmüller, Vanessa, et al. "Practical tools to support marine spatial planning: a review and some prototype tools." Marine Policy 38 (2013): 214-227.</small></blockquote>
+</section>
+
+<section>
+    <h3>Types of MSP tools</h3>
+
+    <p>Identifying spatial interactions between activities<br/>
+        Risk assessment of cumulative effects of human pressures<br/>
+        Decision support systems
+    </p>
+    <hr/>
+    <p>Web-based vs. GIS-based tools</p>
+    <hr/>
+    <p>Designed for different users (programmer, scientist, strategic planner, case officer, public),</p>
+    <hr/>
+    <p>To addresse  different stages of the plan</p>
+</section>
+
+<section>
+    <h3>ADRIPLAN approach</h3>
+    <div style="float: left; width: 55%;">
+        <img width="100%" src="img/adriplan_data_portal.png"/>
+    </div>
+    <div style="float: right; width: 45%;">
+        <ul>
+            <li><strong>ADRIPLAN Portal</strong>: an integrated and collaborative SDI and a web-based platform for publishing, sharing and processing MSP data</li>
+        </ul>
+    </div>
+    <ul>
+        <li><strong>Tools4MSP:</strong> a set of web and open source tools developed to support the MSP activities</li>
+        <li>The infrastructure and Tools4MSP are currently under further development</li>
+    </ul>
+</section>
+
+<section data-background-image="img/architecture.png" data-background-size="contain">
+    <aside class="notes">
+        Schema utilizzando per ADRIPLAN ma in realtà è un approccio abbastanza generale
+    </aside>
+</section>
+
+<section data-background-image="img/architecture_highlight1.png" data-background-size="contain">
+    <!--h3>1 - Adriplan Data Portal</h3>
+    <img style="height: 230px;" src="img/adriplan_data_portal.png" alt=""/>
+    <img style="height: 230px;" src="img/architecture_zoom1.png" alt=""/>
+    <ul>
+        <li>GeoNode fork: GeoDjango, OWSlib, PyCSW, GeoServer</li>
+        <li>Geospatial data storage / archiving, discovering, sharing</li>
+        <li>Interoperable services: collaborative SDI</li>
+        <li>Granular permissions system</li>
+        <li>Interactive mapping</li>
+    </ul-->
+    <!--a href="http://data.adriplan.eu">http://data.adriplan.eu</a-->
+</section>
+
+<section>
+    <h3>1 - Adriplan Data Portal</h3>
+    <ul>
+        <li>330 layers (geospatial datasets - raster + vector) </li>
+        <li>120 maps (combination of layers)</li>
+        <li>Deal with external OGC-services through "Remote services" functionality</li>
+    </ul>
+    <img style="height: 230px;" src="img/network.png" alt=""/>
+</section>
+
+<section  data-background-image="img/adriplan_layers.png" data-background-size="contain">
+</section>
+
+<section  data-background-image="img/architecture_highlight2.png" data-background-size="contain">
+    <div class="fragment fade-left" style="margin-top: 370px; background-color: rgba(200, 200, 200, .75); border-radius: 25px; padding: 10px;">
+        <ul>
+            <li>Direct interaction with stored data</li>
+            <li>The users can build several scenarios (called Case Studies) by choosing the analysis area, the data layers, the analysis grid cell</li>
+            <li>The spatial outputs from each run are automatically saved and
+                published through the portal</li>
+        </ul>
+    </div>
+</section>
+
+<!--section>
+    <h3>2 - Tools4MSP</h3>
+    <ul>
+        <li>GeoNode plugin (python)</li>
+        <li>Direct interaction with stored data</li>
+        <li>The users can build several scenarios (called Case Studies) by choosing the analysis area, the data layers, the analysis grid cell</li>
+        <li>The output includes: geographical layers, raw data,
+            base statistics and graphs</li>
+        <li>The spatial outputs from each run are automatically saved and
+            published through the portal</li>
+    </ul>
+    <aside class="notes">
+        Case Study concept. It allows users to configure a
+        simulation through a graphical interface: to choose the area
+        of analysis, the grid cell size (hexagonal grid), to define
+        the geographical resources (layers) to be used to model the
+        different phenomena which can be, depending on the context,
+        uses and activities or environmental components.  Each user
+        can create more "Case Studies" and compare the results.
+
+        The outputs from each run on “Case Studies” are
+        automatically saved as “geographical layers” and published
+        through the portal. The layer created is initially
+        accessible only for admin users but it is possible to modify
+        the access rules to allow the access also for other
+        registered or non-registered users.
+
+        For each "Case Study" a summary page is available that lists
+        general information (e.g.  cells number, total score). In
+        the next semester this information will be integrated with
+        graphs and statistics automatically generated starting from
+        the results of analyses.
+    </aside>
+</section-->
+
+<section>
+    <h3>Tools4MSP - Conflict score</h3>
+    <p>Tool to quantify the overlapping of uses, calculating the
+        direct spatial conflict score based on COEXIST methodology
+    </p>
+    <img height="300" data-src="/image/adriplan_msp_tools/coexist.png">
+    <a href="http://www.coexistproject.eu/">http://www.coexistproject.eu/</a>
+</section>
+
+<section data-background-image="img/coexists_schema.png" data-background-size="contain">
+    <aside class="notes">
+    </aside>
+</section>
+
+<section>
+    <h3>Tools4MSP - Cumulative impact</h3>
+    <p>
+        Identify areas in the marine space where the environmental
+        components are more exposed to anthropogenic pressures
+    </p>
+
+    <ul>
+        <li>Activities and uses (e.g. Maritime transport) </li>
+        <li>Environmental components (e.g. Marine mammals)</li>
+        <li>Pressures (e.g. Underwater noise)</li>
+        <li>Sensitivities: the sensitivity of each environmental component to each pressure generated by a maritime use</li>
+    </ul>
+    <p><small>firstly introduced by Halpern et al. (2008) at global
+        scale, then implemented in several Marine Regions
+        (Mediterranean by Micheli et al. (2013), Baltic Sea by
+        (Korpinen et al., 2013), and North Sea (Andersen et al., 2013)).
+        </small></p>
+</section>
+
+<section data-background-image="img/cumulative_impact_schema.png" data-background-size="contain">
+    <aside class="notes">
+    </aside>
+</section>
+
+<section>
+    <h3>Tools4MSP - Cumulative impact</h3>
+
+    <p>
+        <small>
+            $ CI = \sum_{i=1}^l\sum_{j=1}^m\sum_{k=1}^n s(U_i, P_j, E_k) i(U_i, M(U_i, P_j, E_k)) d(E_k)$
+            </small>
+    </p>
+
+    <p><small>modified from Andersen 2013, Human uses, pressures and impacts in the eastern North Sea</small></p>
+    <ul>
+        <li>U = Activities and uses</li>
+        <li>E = Environmental components</li>
+        <li>P = Pressures</li>
+        <li>s(U, P, E) = Sensitivities</li>
+        <li>i(U, M) = intensity U in the cell
+        in question according to spatial model M</li>
+    </ul>
+</section>
+
+<section  data-background-image="img/cs_selection.png" data-background-size="contain">
+</section>
+
+<section  data-background-image="img/cs_configuration.png" data-background-size="contain">
+</section>
+
+<section  data-background-image="img/cs_results.png" data-background-size="contain">
+</section>
+
+<section  data-background-image="img/cumulative_impact_2016.png" data-background-size="contain">
+</section>
+
+<!--section>
+    <h3>Tools4MSP - Software packages</h3>
+    <ul>
+        <li>A stack of 3 elements</li>
+        <li>Tools4MSP GeoNode plugin: integrated GUI to create scenarios (Case Studies) and to visualize the outputs, functions to deal with GeoNode data store</li>
+        <li>Tools4MSP library: a geonode-agnostic library that implements the core functionalities (es. Case Study) and the specific tools (e.g. COEXIST, Cumulative Imapct)  </li>
+        <li>RectifiedGrid: lower level library to deal with raster data</li>
+    </ul>
+</section-->
+
+<!--section>
+    <h3>Tools4MSP - GeoNode plugin</h3>
+    <img height="500px" data-src="img/case_studies.png">
+</section>
+
+<section>
+    <h3>Tools4MSP - GeoNode plugin</h3>
+    <img height="500px" data-src="img/coexists_oputput.png">
+</section>
+
+<section>
+    <h3>Tools4MSP - GeoNode plugin</h3>
+    <img height="500px" data-src="img/cumulative_impact_2016.png">
+</section>
+
+<section>
+    <h3>Tools4MSP - GeoNode plugin</h3>
+    <img height="500px" data-src="img/cumulative_impact_maps.png">
+</section-->
+
+<!--section>
+    <h3>Tools4MSP - RectifiedGrid</h3>
+    <ul>
+        <li>Geospatial grid-based analyses</li>
+        <li>Based on: Numpy, SciPy, shapely, rasterio, fiona, geopandas, owslib, matplotlib-basemaps</li>
+        <li>Extends Numpy MaskedArray class by adding geospatial
+            functionalities (i.e. projection awareness, bounding boxes)</li>
+        <li>Simply support of "map-algebra" through Numpy syntax (ex. map_a + map_b)
+        <li>Input / Output from geospatial formats through rasterio / fiona
+        <li>Supports EEA reference grid (based on Lambert Azimuthal Equal Area - 1, 10, 100 km)</li>
+    </ul>
+    <small><a href="https://github.com/CNR-ISMAR/rectifiedgrid">https://github.com/CNR-ISMAR/rectifiedgrid</a> (coming soon)</small>
+</section-->
+
+<section  data-background-image="img/architecture_highlight3.png" data-background-size="contain">
+</section>
+
+<section>
+    <h3>3 - Analysis, Rapid prototyping</h3>
+    <div style="float: left; width: 33%;">
+        <img style="height: 500px" src="img/jupyter_inputs.png" alt=""/>
+    </div>
+    <div style="float: left; width: 33%;">
+        <img style="height: 500px" src="img/jupyter.png" alt=""/>
+    </div>
+    <div style="float: right; width: 33%;">
+        <img style="height: 500px;" src="img/jupyter_maps.png" alt=""/>
+    </div>
+    <p>Jupyter notebook, reusable ".ipynb" files</p>
+</section>
+
+<section data-background-image="img/architecture_highlight5.png" data-background-size="contain">
+</section>
+
+<section>
+    <h4>5 - Desktop applications: GeoServer Explorer</h4>
+    <!--img style="height: 150px;" src="img/architecture_zoom5.png" alt=""/-->
+    <img style="height: 450px;" src="img/qgis_geoserver_explorer.png" alt=""/>
+    <p><small>QGis GeoServer Explorer plugin: to configure GeoServer through QGis (e.g. manage layers, upload new layers, create a manage styles)</small></p>
+    <small><a href="http://boundlessgeo.github.io/qgis-plugins-documentation/geoserver/">http://boundlessgeo.github.io/qgis-plugins-documentation/geoserver/</a></small>
+</section>
+
+<section>
+    <div class="stretch">
+        <iframe src="http://data.adriplan.eu/static/cumulative_impact/15/v1/full/ci_3d_explorer/index.html"
+                height="100%"
+                width="100%"></iframe>
+    </div>
+</section>
+
+<section>
+    <h3>Future steps</h3>
+    <ul>
+        <li>Add new modules related with the MSP process (e.g. ecosystem services, scenario planning and analysis, socio-economic aspects) </li>
+        <li>Performance optimization through specific formats for storage (HDF5, numpy.memmap)</li>
+        <li>Finalize a downloadable ready-to-use analysis package: data + software</li>
+        <li>Support more advaced spatial analyses (e.g. PyGRASS)</li>
+        <li>Add a WPS service (e.g. PyWPS)</li>
+    </ul>
+</section>
+
+<section>
+    <h3>Development and integration of geopython tools to support Integrated Coastal Management and Maritime Spatial Planning</h3>
+    <span xmlns:cc="http://creativecommons.org/ns#"
+          property="cc:attributionName">by S. Menegon, A. Sarretta, A. Barbanti, E. Gissi & C. Venier </span>
+    is licensed under a <a rel="license"
+                           href="http://creativecommons.org/licenses/by/4.0/">Creative
+        Commons Attribution 4.0 International
+        License</a>.
+    <br/>
+    <a rel="license"
+       href="http://creativecommons.org/licenses/by/4.0/">
+        <img alt="Licenza Creative Commons"
+             style="border-width:0"
+             src="img/cc_by-88x31.png" />
+    </a>
+</section>
